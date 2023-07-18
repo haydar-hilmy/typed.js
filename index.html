@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Typed.js</title>
+
+    <!-- TYPED.JS -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</head>
+
+<body>
+
+    <h1 id="text-spell" style="display: inline-block;"></h1>
+
+
+    <script>
+        var typed = new Typed('#text-spell', {
+            strings: [
+                "Halo",
+                "Hello",
+                "Hola",
+                "Bonjour",
+                "Ciao",
+                "Olá",
+                "Konnichiwa",
+                "Annyeonghaseyo",
+                "Nǐ hǎo",
+                "Namaste",
+                "Salam",
+                "Merhaba",
+                "Szia",
+                "Sugeng Rawuh",
+                "Assalamu\'alaikum",
+            ],
+            shuffle: true, // Pengacakan string, berlaku ketika string dalam array
+            typeSpeed: 20, // Kecepatan Pengetikan
+            showCursor: true, // Tampilkan Cursor
+            cursorChar: '<h1>|</h1>', // Cursor
+            backSpeed: 20, // Kecepatan penghapusan
+            backDelay: 1500, // Delay dahulu setelah pengetikan
+            loop: true, // Pengulangan
+        });
+    </script>
+</body>
+
+</html>
